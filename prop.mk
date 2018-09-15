@@ -39,7 +39,7 @@ vendor.voice.voip.conc.disabled=true
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.boot.btmacaddr=00:00:00:00:00:00 \
 bluetooth.hfp.client=1 \
-qcom.bluetooth.soc=smd \
+vendor.qcom.bluetooth.soc=pronto \
 ro.bluetooth.hfp.ver=1.7 \
 ro.qualcomm.bt.hci_transport=smd
 
