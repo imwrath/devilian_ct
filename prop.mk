@@ -37,10 +37,12 @@ vendor.voice.voip.conc.disabled=true
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
+ro.boot.btmacaddr=00:00:00:00:00:00 \
 bluetooth.hfp.client=1 \
 qcom.bluetooth.soc=smd \
 ro.bluetooth.hfp.ver=1.7 \
 ro.qualcomm.bt.hci_transport=smd
+
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -184,3 +186,9 @@ persist.sys.usb.config.extra=none
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
 wifi.interface=wlan0
+
+#Xtended
+ro.xtended.version=$(XTENDED_XTRA_VERSION) \ 
+ro.modversion=$(XTENDED_MOD_VERSION) \ 
+ro.xtended.buildtype=$(XTENDED_BUILD_TYPE) \ 
+ro.xtended.display.version=$(XTENDED_DISPLAY_VERSION)
