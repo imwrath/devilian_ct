@@ -335,4 +335,7 @@
     <!-- Whether device has button lights support -->
     <bool name="config_button_brightness_support">true</bool>
 
+    <bool name="config_dozeAlwaysOnDisplayAvailable">false</bool>
+    <bool name="config_allowAutoBrightnessWhileDozing">false</bool>
+    
 </resources>
