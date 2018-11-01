@@ -391,9 +391,9 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
-# XiaomiParts
+# AdvancedControls
 PRODUCT_PACKAGES += \
-    XiaomiParts \
+    AdvancedControls \
     Messaging
 
 PRODUCT_COPY_FILES += \
