@@ -73,8 +73,11 @@ persist.debug.coresight.config=stm-events
 PRODUCT_PROPERTY_OVERRIDES += \
 debug.egl.hw=0 \
 debug.enable.sglscale=1 \
+debug.sf.enable_hwc_vds=1 \
 debug.mdpcomp.logs=0 \
 debug.sf.hw=0 \
+debug.sf.latch_unsignaled=1 \
+debug.sf.recomputecrop=0 \
 dev.pm.dyn_samplingrate=1 \
 persist.debug.wfd.enable=1 \
 persist.demo.hdmirotationlock=false \
@@ -196,3 +199,34 @@ persist.sys.usb.config.extra=none
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
 wifi.interface=wlan0
+
+# HWUI
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.hwui.texture_cache_size=72 \
+ro.hwui.layer_cache_size=48 \
+ro.hwui.r_buffer_cache_size=8 \
+ro.hwui.path_cache_size=32 \
+ro.hwui.gradient_cache_size=1 \
+ro.hwui.drop_shadow_cache_size=6 \
+ro.hwui.texture_cache_flushrate=0.4 \
+ro.hwui.text_small_cache_width=1024 \
+ro.hwui.text_small_cache_height=1024 \
+ro.hwui.text_large_cache_width=2048 \
+ro.hwui.text_large_cache_height=1024
+
+# LKMD
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.lmk.low=1001 \
+ro.lmk.medium=800 \
+ro.lmk.critical=0 \
+ro.lmk.critical_upgrade=false \
+ro.lmk.upgrade_pressure=100 \
+ro.lmk.downgrade_pressure=100 \
+ro.lmk.kill_heaviest_task=true \
+ro.lmk.kill_timeout_ms=100 \
+ro.lmk.use_minfree_levels=true
+
+# Boot
+PRODUCT_PROPERTY_OVERRIDES += \
+sys.vendor.shutdown.waittime=500
+
