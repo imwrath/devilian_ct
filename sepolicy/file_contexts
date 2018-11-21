@@ -24,3 +24,5 @@
 
 # Light HAL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_msm8953 u:object_r:hal_light_default_exec:s0
+
+/(vendor|system/vendor)/bin/hw/android\.hardware\.health@2\.0-service\.mido        u:object_r:hal_health_default_exec:s0
